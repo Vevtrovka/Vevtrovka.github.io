@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEV SQUAD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Anton', sans-serif;
+            background-color: #ffde59;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #ffde59;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            color: rgb(97, 91, 73);
+            letter-spacing: 10px;
+            font-size: 8vw;
+            margin: 0;
+        }
+
+        .Logo {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            height: 60px;
+            width: 60px;
+            transition: none;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ffde59;
+        }
+
+        .fancy-button {
+            flex: 1 1 45%;
+            max-width: 45%;
+            margin: 10px;
+            height: 80px;
+            font-size: 5vw;
+            font-weight: bold;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .fancy-button:nth-child(1) { background-color: #a48229; }
+        .fancy-button:nth-child(2) { background-color: #836624; }
+        .fancy-button:nth-child(3) { background-color: #473912; }
+        .fancy-button:nth-child(4) { background-color: #262513; }
+
+        .fancy-button:hover {
+            transform: scale(1.05);
+        }
+
+        main {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay-box {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(50, 50, 50, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        footer {
+            background-color: #ffde59;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) {
+            .fancy-button {
+                flex: 1 1 22%;
+                max-width: 22%;
+                height: 100px;
+                font-size: 30px;
+            }
+            .Logo {
+                height: 100px;
+                width: 100px;
+                top: 30px;
+                right: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VEV SQUAD</h1>
+        <img src="ChatGPT_Image_18._Juni_2025__13_19_14-removebg-preview.png" alt="Vevtrovka Squad" class="Logo">
+        <div class="button-container">
+            <button class="fancy-button">Lorem</button>
+            <button class="fancy-button">Ipsum</button>
+            <button class="fancy-button">Dolor</button>
+            <button class="fancy-button">Sit</button>
+        </div>
+    </header>
+    <main>
+        <video autoplay muted loop playsinline>
+            <source src="c:/Users/User/Desktop/Pictures and Videos/2715412-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-box">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </main>
+    <footer>
+        <p>@Mathieu 2025</p>
+    </footer>
+</body>
+</html>
+
