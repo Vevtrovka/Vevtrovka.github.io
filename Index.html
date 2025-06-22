@@ -120,6 +120,38 @@
                 right: 40px;
             }
         }
+        .extra-windows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f1e189;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.window-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+    background-color: #fff4b2;
+    border: 2px solid #a48229;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    color: #5c4a1e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.window-box:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .window-box {
+        flex: 1 1 20%;
+        max-width: 20%;
+    }
+}
     </style>
 </head>
 <body>
@@ -127,10 +159,11 @@
         <h1>VEV SQUAD</h1>
         <img src="ChatGPT_Image_18._Juni_2025__13_19_14-removebg-preview.png" alt="Vevtrovka Squad" class="Logo">
         <div class="button-container">
-            <button class="fancy-button">Lorem</button>
-            <button class="fancy-button">Ipsum</button>
-            <button class="fancy-button">Dolor</button>
-            <button class="fancy-button">Sit</button>
+            <button class="fancy-button" onclick="window.open('lorem.html', '_blank')">Lorem</button>
+            <button class="fancy-button" onclick="window.open('ipsum.html', '_blank')">Ipsum</button>
+            <button class="fancy-button" onclick="window.open('dolor.html', '_blank')">Dolor</button>
+            <button class="fancy-button" onclick="window.open('sit.html', '_blank')">Sit</button>
+
         </div>
     </header>
     <main>
