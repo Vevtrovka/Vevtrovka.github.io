@@ -77,7 +77,7 @@
             position: relative;
             width: 100%;
             height: auto;
-            max-height: 500px;
+            max-height: 80vh;
             overflow: hidden;
         }
 
@@ -89,9 +89,9 @@
 
         .overlay-box {
             position: absolute;
-            top: 10%;
+            top: 5vh;
             left: 50%;
-            margin-bottom: 10%;
+            bottom: 5vh;
             transform: translateX(-50%);
             width: 90%;
             max-width: 800px;
@@ -101,8 +101,9 @@
             border-radius: 10px;
             font-size: 18px;
             line-height: 1.6;
+            /* max-height: fit-content; */
             overflow-y: auto;
-            max-height: 70vh;
+            max-height: 300px;
         }
 
         footer {
@@ -112,15 +113,7 @@
             font-size: 18px;
         }
 
-        @media (min-width: 768px) {
-            .fancy-button {
-                flex: 1 1 22%;
-                max-width: 22%;
-                height: 100px;
-                font-size: 30px;
-            }
-        }
-
+        
         .extra-windows {
             display: flex;
             flex-wrap: wrap;
@@ -129,7 +122,7 @@
             padding: 40px 20px;
             gap: 20px;
         }
-
+        
         .window-box {
             flex: 1 1 45%;
             max-width: 45%;
@@ -141,15 +134,22 @@
             color: #5c4a1e;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
+            max-height: 70vh;
         }
-
+        
         .window-box:hover {
             transform: scale(1.05);
         }
-
+        
         @media (min-width: 768px) {
-            .window-box {
-                flex: 1 1 20%;
-                max-width: 20%;
+            .fancy-button {
+                flex: 1 1 22%;
+                max-width: 22%;
+                height: 100px;
+                font-size: 30px;
+                
             }
-        }
+            .window-box{
+                max-height: 50vh;
+            }
+            }
